@@ -21,21 +21,20 @@ The project demonstrates a **production-ready full-stack SaaS architecture** usi
 Public Website
 
 ```
-https://your-project.vercel.app
+[https://your-project.vercel.app](https://asif-gym-portfolio.vercel.app/)
 ```
 
-Admin Dashboard
+---
 
-```
-https://your-project.vercel.app/admin
-```
+## 💎 Core Dashboard Features
 
-Demo Login
-
-```
-email: demo@gym.com
-password: 123456
-```
+* **👥 Member Management:** Complete CRUD system to add, edit, and track gym members, including their joining dates, active plans, and payment statuses.
+* **💳 Dynamic Pricing Engine:** Admin-controlled membership tiers. Creating or updating a plan in the dashboard instantly updates the public-facing `/pricing` page. Includes a dynamic "Most Popular" toggle.
+* **📅 Attendance Tracking & Analytics:** Log daily check-ins. The system automatically calculates a member's consistency percentage and assigns dynamic performance ratings (e.g., *Excellent*, *Good*, *Poor*).
+* **💬 Smart Messaging Hub:** A dual-tab communication center:
+  * **Member Alerts:** Auto-filters members with pending payments or expiring plans. Features 1-click WhatsApp messaging (via `wa.me` links) and instant Email sending.
+  * **Public Inquiries:** Receives and tracks messages submitted from the public `/contact` form, featuring unread badges and easy reply management.
+* **⚡ Automated Background Tasks:** Configured cron jobs to automatically sweep the database daily and send bulk email reminders to members whose plans expire in exactly 5 days.
 
 ---
 
@@ -119,51 +118,50 @@ Icons
 
 ---
 
-# 📂 Project Structure
-
-```
-gym-saas-platform
+```text
+gym_template/
+├── app/
+│   ├── (public)/                 # Public-facing Website
+│   │   ├── page.tsx              # Landing Page
+│   │   ├── pricing/page.tsx      # Dynamic Pricing Page
+│   │   └── contact/page.tsx      # Public Contact Form
+│   ├── admin/                    # Secure SaaS Dashboard
+│   │   ├── layout.tsx            # Admin layout with Sidebar
+│   │   ├── dashboard/page.tsx    # Main metrics & Top Members
+│   │   ├── members/page.tsx      # Member directory & CRUD
+│   │   ├── attendance/page.tsx   # Check-ins & Stats Modal
+│   │   ├── plans/page.tsx        # Pricing tier management
+│   │   ├── messages/page.tsx     # Smart Messaging Hub & Inquiries
+│   │   └── settings/page.tsx     # Gym profile configuration
+│   ├── api/                      # Backend Route Handlers
+│   │   ├── members/route.ts      # Member API
+│   │   ├── plans/route.ts        # Plans API (with [id] delete check)
+│   │   ├── contact/route.ts      # Public inquiries API
+│   │   ├── email/route.ts        # Automated Email sending engine
+│   │   ├── whatsapp/route.ts     # WhatsApp API bridge
+│   │   └── cron/notifications/   # Automated daily sweep logic
+│   └── layout.tsx                # Root layout
 │
-├── app
-│   ├── page.tsx
-│   ├── about
-│   ├── contact
-│   ├── plans
-│   │
-│   ├── admin
-│   │   ├── dashboard
-│   │   ├── members
-│   │   ├── plans
-│   │   ├── attendance
-│   │   └── messages
-│   │
-│   └── api
-│       ├── auth
-│       ├── members
-│       ├── plans
-│       ├── attendance
-│       └── whatsapp
+├── components/
+│   ├── admin/
+│   │   └── Sidebar.tsx           # Dashboard navigation
+│   ├── contact/
+│   │   ├── ContactHero.tsx       
+│   │   ├── ContactDetails.tsx    # Client-side form with submit logic
+│   │   └── ContactMap.tsx        
+│   └── pricing/
+│       └── PricingCards.tsx      # Server Component fetching live DB plans
 │
-├── components
-│   ├── layout
-│   ├── ui
-│   ├── tables
-│   └── forms
+├── lib/
+│   └── prisma.ts                 # Prisma Client Singleton
 │
-├── lib
-│   ├── prisma.ts
-│   ├── auth.ts
-│   └── utils.ts
+├── prisma/
+│   └── schema.prisma             # PostgreSQL Database Models
 │
-├── prisma
-│   └── schema.prisma
-│
-├── public
-│   └── images
-│
-└── README.md
-```
-
+├── public/                       # Static assets (images, icons)
+├── .env                          # Environment variables (DB URL, API Keys)
+├── tailwind.config.ts            # Tailwind theme configuration
+└── package.json                  # Dependencies and scripts
 ---
 
 # ⚙️ Local Development
