@@ -1,36 +1,297 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Gym SaaS Platform
 
-## Getting Started
+Modern **Gym Website + Management System** built using a scalable SaaS architecture.
 
-First, run the development server:
+This platform helps gyms manage **members, attendance, payments, and membership plans** while also providing a **high-conversion landing website**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The project demonstrates a **production-ready full-stack SaaS architecture** using modern technologies.
+
+---
+
+# 🌐 Live Demo
+
+Public Website
+
+```
+https://your-project.vercel.app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Admin Dashboard
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+https://your-project.vercel.app/admin
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Demo Login
 
-## Learn More
+```
+email: demo@gym.com
+password: 123456
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# ✨ Core Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Public Website
 
-## Deploy on Vercel
+• Modern SaaS landing page
+• Pricing plans section
+• Contact form
+• SEO optimized layout
+• Mobile responsive design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Admin Dashboard
+
+• Member management
+• Membership plan management
+• Attendance tracking
+• Payment tracking
+• Admin analytics dashboard
+
+---
+
+## Communication System
+
+• WhatsApp message integration
+• Email notifications
+• Membership renewal alerts
+
+---
+
+# 🧠 System Architecture
+
+```
+User Browser
+      │
+      ▼
+Next.js Frontend
+      │
+      ▼
+Next.js API Routes
+      │
+      ▼
+Prisma ORM
+      │
+      ▼
+Supabase PostgreSQL Database
+```
+
+---
+
+# 🏗 Technology Stack
+
+Frontend
+
+* Next.js (App Router)
+* React
+* Tailwind CSS
+
+Backend
+
+* Next.js API Routes
+
+Database
+
+* Supabase PostgreSQL
+
+ORM
+
+* Prisma
+
+Deployment
+
+* Vercel
+
+Icons
+
+* Lucide React
+
+---
+
+# 📂 Project Structure
+
+```
+gym-saas-platform
+│
+├── app
+│   ├── page.tsx
+│   ├── about
+│   ├── contact
+│   ├── plans
+│   │
+│   ├── admin
+│   │   ├── dashboard
+│   │   ├── members
+│   │   ├── plans
+│   │   ├── attendance
+│   │   └── messages
+│   │
+│   └── api
+│       ├── auth
+│       ├── members
+│       ├── plans
+│       ├── attendance
+│       └── whatsapp
+│
+├── components
+│   ├── layout
+│   ├── ui
+│   ├── tables
+│   └── forms
+│
+├── lib
+│   ├── prisma.ts
+│   ├── auth.ts
+│   └── utils.ts
+│
+├── prisma
+│   └── schema.prisma
+│
+├── public
+│   └── images
+│
+└── README.md
+```
+
+---
+
+# ⚙️ Local Development
+
+Clone repository
+
+```
+git clone https://github.com/yourusername/gym-saas-platform.git
+```
+
+Move to project directory
+
+```
+cd gym-saas-platform
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run development server
+
+```
+npm run dev
+```
+
+Open browser
+
+```
+http://localhost:3000
+```
+
+---
+
+# 🔐 Environment Variables
+
+Create `.env` file in project root.
+
+```
+DATABASE_URL=
+JWT_SECRET=
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
+---
+
+# 🗄 Database Setup
+
+Push Prisma schema to database
+
+```
+npx prisma db push
+```
+
+Generate Prisma client
+
+```
+npx prisma generate
+```
+
+---
+
+# 🚀 Deployment Guide
+
+This project is optimized for **Vercel deployment**.
+
+Steps:
+
+1. Push code to GitHub
+2. Import repository in Vercel
+3. Configure environment variables
+4. Deploy project
+
+After deployment your website will be available at
+
+```
+https://your-project.vercel.app
+```
+
+---
+
+# 🔄 Development Workflow
+
+1. Setup project environment
+2. Configure database schema
+3. Create API routes
+4. Develop UI components
+5. Connect frontend to backend
+6. Test features locally
+7. Deploy to production
+
+---
+
+# 🧪 Testing Strategy
+
+Verify the following before deployment:
+
+• Member creation
+• Plan assignment
+• Attendance tracking
+• Payment tracking
+• Contact form submission
+
+---
+
+# 🧩 Future Improvements
+
+• Multi-gym SaaS support
+• Stripe payment integration
+• Automated WhatsApp messaging
+• Advanced analytics dashboard
+
+---
+
+# 📄 License
+
+All Rights Reserved.
+
+This project and its source code are the intellectual property of the author.
+
+Unauthorized copying or distribution of this code is prohibited.
+
+---
+
+# 👨‍💻 Author
+
+**Asif Khan**
+
+Full-Stack Developer
+SaaS Platform Builder
+
+---
+
+# ⭐ Purpose
+
+This repository demonstrates a **modern SaaS architecture** for portfolio and client demo purposes.
