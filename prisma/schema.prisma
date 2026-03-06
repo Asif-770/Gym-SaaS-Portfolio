@@ -1,0 +1,75 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  
+}
+
+model Admin {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now())
+}
+
+model Plan {
+  id          String   @id @default(uuid())
+  name        String
+  duration    Int
+  price       Float
+  description String?
+  isPopular   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  members Member[]
+}
+
+model Member {
+  id            String   @id @default(uuid())
+  name          String
+  phone         String
+  email         String?
+  address       String?
+  joiningDate   DateTime
+  expiryDate    DateTime
+  paymentStatus String
+  planId        String
+  createdAt     DateTime @default(now())
+
+  plan Plan @relation(fields: [planId], references: [id])
+  attendance Attendance[]
+  payments   Payment[]
+}
+
+model Attendance {
+  id        String   @id @default(uuid())
+  memberId  String
+  date      DateTime
+  status    String
+
+  member Member @relation(fields: [memberId], references: [id])
+}
+
+model Payment {
+  id        String   @id @default(uuid())
+  memberId  String
+  amount    Float
+  date      DateTime
+  status    String
+
+  member Member @relation(fields: [memberId], references: [id])
+}
+
+model Inquiry {
+  id        String   @id @default(uuid())
+  firstName String
+  lastName  String
+  email     String
+  subject   String
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

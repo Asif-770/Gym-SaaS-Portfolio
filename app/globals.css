@@ -1,26 +1,34 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 15, 15, 15;
+  --background-end-rgb: 15, 15, 15;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Inter', sans-serif; /* Ensure you have a nice sans-serif font loaded */
+}
+
+/* Custom utility class for the neon green color */
+@layer utilities {
+  .text-neon-green {
+    color: #D0FD3E; /* Exact color from Figma */
+  }
+  .bg-neon-green {
+    background-color: #D0FD3E;
+  }
+  .border-neon-green {
+    border-color: #D0FD3E;
+  }
 }
