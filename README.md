@@ -1,3 +1,11 @@
+![Next.js](https://img.shields.io/badge/Next.js-14-black)
+![React](https://img.shields.io/badge/React-18-blue)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8)
+![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ecf8e)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-black)
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)
+
 # 🚀 Gym SaaS Platform
 
 Modern **Gym Website + Management System** built using a scalable SaaS architecture.
@@ -285,7 +293,7 @@ Unauthorized copying or distribution of this code is prohibited.
 
 # 👨‍💻 Author
 
-**Asif Khan**
+**Md Asif Khan**
 
 Full-Stack Developer
 SaaS Platform Builder
