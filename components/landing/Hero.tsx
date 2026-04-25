@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useTransform, Variants } from "framer-motion";
 import { Play, ArrowRight, ChevronLeft, ChevronRight, Activity } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -84,11 +84,11 @@ export default function Hero() {
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
-  const slideVariants = {
+  const slideVariants: Variants = {
     enter: (dir: number) => ({
       x: dir > 0 ? 1000 : -1000,
       opacity: 0,
-      scale: 1.1, // Slight zoom out effect on enter
+      scale: 1.1,
     }),
     center: {
       zIndex: 1,

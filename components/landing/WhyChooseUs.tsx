@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import { ShieldCheck, Dumbbell, Users, Award } from "lucide-react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export default function WhyChooseUs() {
   
-  // Stagger variants for the lists
-  const containerVariants = {
+ // Stagger variants for the lists
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -15,11 +16,10 @@ export default function WhyChooseUs() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } }
   };
-
   return (
     <section className="relative bg-[#0a0a0a] py-32 px-6 lg:px-12 overflow-hidden">
       {/* Subtle Grid Background */}
