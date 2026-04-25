@@ -17,11 +17,10 @@
 ---
 
 ## 📺 Project Walkthrough
-**Click the thumbnail below to watch the system in action**
+**Click the thumbnail below to watch the Admin Panel**
 
 [![Gym SaaS Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=hQU7avbMpkI)
 
-*Note: Replace **YOUR_VIDEO_ID** in both links above with the 11-character ID from your YouTube URL.*
 
 </div>
 
