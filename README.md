@@ -6,35 +6,30 @@
 ![Vercel](https://img.shields.io/badge/Deploy-Vercel-black)
 ![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)
 
-# 🚀 Gym SaaS Platform
+<div align="center">
 
-Modern **Gym Website + Management System** built using a scalable SaaS architecture.
+# 🏋️‍♂️ GYM-SAAS-PORTFOLIO
+**Automated Gym Management & Member Engagement Platform**
 
-This platform helps gyms manage **members, attendance, payments, and membership plans** while also providing a **high-conversion landing website**.
-
-The project demonstrates a **production-ready full-stack SaaS architecture** using modern technologies.
-
----
-
-# 🌐 Live Demo
-## 📺 Project Demo
-Click the image below to watch the full walkthrough of the Gym Management System.
-
-[![Gym SaaS Demo][https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg](https://youtu.be/hQU7avbMpkI)
-
-> Key Features Shown:
->  Real-time Member Check-in
->  Automated Expiry Email Alerts
->  WhatsApp Messaging Hub
->  Dynamic Pricing Management
-
-Public Website
-
-```
-[https://your-project.vercel.app](https://asif-gym-portfolio.vercel.app/)
-```
+[![Vercel Deployment](https://img.shields.io/badge/Live_Demo-Hosted_on_Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://asif-gym-portfolio.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Built_With-Next.js_14-neon?style=for-the-badge&logo=nextdotjs&logoColor=white)](#)
 
 ---
+
+## 📺 Project Walkthrough
+**Click the thumbnail below to watch the system in action**
+
+[![Gym SaaS Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
+*Note: Replace **YOUR_VIDEO_ID** in both links above with the 11-character ID from your YouTube URL.*
+
+</div>
+
+### 🛠️ Tech Stack
+* **Framework:** Next.js (App Router)
+* **Database:** Supabase + Prisma ORM
+* **Styling:** Tailwind CSS (Dark Mode Optimized)
+* **Automation:** Vercel Cron Jobs
 
 ## 💎 Core Dashboard Features
 
