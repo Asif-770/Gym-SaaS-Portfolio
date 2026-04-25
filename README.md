@@ -20,7 +20,7 @@ The project demonstrates a **production-ready full-stack SaaS architecture** usi
 ## 📺 Project Demo
 Click the image below to watch the full walkthrough of the Gym Management System.
 
-[![Gym SaaS Demo]([YOUR_VIDEO_LINK_HERE](https://youtu.be/hQU7avbMpkI))
+[![Gym SaaS Demo][https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg](https://youtu.be/hQU7avbMpkI)
 
 > Key Features Shown:
 >  Real-time Member Check-in
