@@ -17,6 +17,16 @@ The project demonstrates a **production-ready full-stack SaaS architecture** usi
 ---
 
 # 🌐 Live Demo
+## 📺 Project Demo
+Click the image below to watch the full walkthrough of the Gym Management System.
+
+[![Gym SaaS Demo]([YOUR_VIDEO_LINK_HERE](https://youtu.be/hQU7avbMpkI))
+
+> Key Features Shown:
+>  Real-time Member Check-in
+>  Automated Expiry Email Alerts
+>  WhatsApp Messaging Hub
+>  Dynamic Pricing Management
 
 Public Website
 
@@ -300,4 +310,4 @@ SaaS Platform Builder
 
 # ⭐ Purpose
 
-This repository demonstrates a **modern SaaS architecture** for portfolio and client demo purposes.
+This repository demonstrates a "modern SaaS architecture" for portfolio and client demo purposes.
