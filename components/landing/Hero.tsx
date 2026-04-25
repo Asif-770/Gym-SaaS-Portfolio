@@ -266,17 +266,18 @@ export default function Hero() {
             onClick={prevSlide}
             onMouseEnter={() => setIsHoveringCTA(true)}
             onMouseLeave={() => setIsHoveringCTA(false)}
-            className="h-14 w-14 rounded-full bg-white/5 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-neon-green hover:text-[#0a0a0a] transition-all hover:scale-110"
+            className="text-white/50 hover:text-neon-green hover:scale-125 hover:-translate-x-1 transition-all duration-300 drop-shadow-lg"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-12 h-12" />
           </button>
+          
           <button 
             onClick={nextSlide}
             onMouseEnter={() => setIsHoveringCTA(true)}
             onMouseLeave={() => setIsHoveringCTA(false)}
-            className="h-14 w-14 rounded-full bg-white/5 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-neon-green hover:text-[#0a0a0a] transition-all hover:scale-110"
+            className="text-white/50 hover:text-neon-green hover:scale-125 hover:translate-x-1 transition-all duration-300 drop-shadow-lg"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-12 h-12" />
           </button>
         </div>
 
